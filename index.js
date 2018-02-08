@@ -15,7 +15,7 @@ var getCombinations = function(set, props) {
   })(set, [[]]).slice(1);
 
   return results.reduce(function acc(accumulator, item) {
-    return accumulator.concat(itme.join("."))
+    return accumulator.concat(item.join("."))
   }, []);
 };
 
