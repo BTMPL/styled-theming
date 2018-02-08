@@ -1,5 +1,8 @@
 # styled-theming
 
+This is a fork of the `styled-theming` project with support for composing multiple variants
+which should result in unique CSS.
+
 > Create themes for your app using [styled-components](https://www.styled-components.com/)
 
 Read the [introductory blog post](http://thejameskyle.com/styled-theming.html)
@@ -7,7 +10,7 @@ Read the [introductory blog post](http://thejameskyle.com/styled-theming.html)
 ## Installation
 
 ```sh
-yarn add styled-components styled-theming
+yarn add styled-components styled-theming-composed
 ```
 
 ## Example
@@ -15,7 +18,7 @@ yarn add styled-components styled-theming
 ```js
 import React from 'react';
 import styled, {ThemeProvider} from 'styled-components';
-import theme from 'styled-theming';
+import theme from 'styled-theming-composed';
 
 const boxBackgroundColor = theme('mode', {
   light: '#fff',
